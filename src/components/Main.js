@@ -256,9 +256,9 @@ function Main() {
             <td style={{ width: '150px', height: '50px' }}>{bulletsToKillOne}</td>
             <td style={{ width: '150px', height: '50px' }}>{bulletsToKillTwo}</td>
             <td style={{ width: '150px', height: '50px' }}>{bulletsToKillThree}</td>
-            <td style={{ width: '150px', height: '50px' }}>{ttkOne}</td>
-            <td style={{ width: '150px', height: '50px' }}>{ttkTwo}</td>
-            <td style={{ width: '150px', height: '50px' }}>{ttkThree}</td>
+            <td style={{ width: '150px', height: '50px' }}>{ttkOne} sec</td>
+            <td style={{ width: '150px', height: '50px' }}>{ttkTwo} sec</td>
+            <td style={{ width: '150px', height: '50px' }}>{ttkThree} sec</td>
           </tr>
         );
       })}
