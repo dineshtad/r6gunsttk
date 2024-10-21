@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/R6GunsTTK/static/css/main.3a159308.css",
-    "main.js": "/R6GunsTTK/static/js/main.f2d09e6c.js",
+    "main.js": "/R6GunsTTK/static/js/main.23057d14.js",
     "static/js/453.dae0fdc4.chunk.js": "/R6GunsTTK/static/js/453.dae0fdc4.chunk.js",
     "index.html": "/R6GunsTTK/index.html",
     "main.3a159308.css.map": "/R6GunsTTK/static/css/main.3a159308.css.map",
-    "main.f2d09e6c.js.map": "/R6GunsTTK/static/js/main.f2d09e6c.js.map",
+    "main.23057d14.js.map": "/R6GunsTTK/static/js/main.23057d14.js.map",
     "453.dae0fdc4.chunk.js.map": "/R6GunsTTK/static/js/453.dae0fdc4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a159308.css",
-    "static/js/main.f2d09e6c.js"
+    "static/js/main.23057d14.js"
   ]
 }
