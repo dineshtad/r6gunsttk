@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import { Modal, Button } from 'react-bootstrap';
-import './Main.css'; // Import your custom CSS
+import './Main.css'; 
 
 function Main() {
   const [showModal, setShowModal] = useState(false);
 
-  const [gunData, setGunData] = useState([]); // Holds the sorted or unsorted data
-  const [originalGunData, setOriginalGunData] = useState([]); // Keeps the original data for default sorting
-  const [applyExtendedBarrel, setApplyExtendedBarrel] = useState(false); // Checkbox state
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'default' }); // Sorting config
-  const [gunSearch, setGunSearch] = useState(''); // Gun Name search state
-  const [operatorSearch, setOperatorSearch] = useState(''); // Operator search state
+  const [gunData, setGunData] = useState([]); 
+  const [originalGunData, setOriginalGunData] = useState([]); 
+  const [applyExtendedBarrel, setApplyExtendedBarrel] = useState(false); 
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'default' }); 
+  const [gunSearch, setGunSearch] = useState(''); 
+  const [operatorSearch, setOperatorSearch] = useState(''); 
 
   useEffect(() => {
-    // Load the CSV file from the public folder
     fetch(`${process.env.PUBLIC_URL}/gunlist.csv`)
       .then((response) => response.text())
       .then((csvData) => {
-        // Parse the CSV data
         Papa.parse(csvData, {
           header: true,
           complete: (result) => {
@@ -26,7 +24,7 @@ function Main() {
               (row) => row.GunName && row.Operators && row.Damage && row.FireRate
             );
             setGunData(cleanedData);
-            setOriginalGunData(cleanedData); // Store the original order of the data
+            setOriginalGunData(cleanedData); 
           },
         });
       });
@@ -35,15 +33,15 @@ function Main() {
   // Effect to reapply sorting when the Extended Barrel checkbox is toggled
   useEffect(() => {
     if (sortConfig.key && sortConfig.direction !== 'default') {
-      handleSort(sortConfig.key, sortConfig.direction); // Reapply sorting with the current config when the checkbox changes
+      handleSort(sortConfig.key, sortConfig.direction); 
     }
   }, [applyExtendedBarrel]);
 
   // Filtered data based on search inputs
-  const filteredGunData = gunData.filter((gun) => {
+  const filteredData = gunData.filter((gun) => {
     return (
-      gun.GunName.toLowerCase().includes(gunSearch.toLowerCase()) &&
-      gun.Operators.toLowerCase().includes(operatorSearch.toLowerCase())
+      gun.GunName.toLowerCase().includes(gunSearch.trim().toLowerCase()) &&
+      gun.Operators.toLowerCase().includes(operatorSearch.trim().toLowerCase())
     );
   });
 
@@ -53,13 +51,13 @@ function Main() {
     if (!directionOverride && sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';
     } else if (!directionOverride && sortConfig.key === key && sortConfig.direction === 'descending') {
-      direction = 'default'; // Cycle back to default (original order)
+      direction = 'default'; 
     }
 
     setSortConfig({ key, direction });
 
     if (direction === 'default') {
-      setGunData(originalGunData); // Return to original order
+      setGunData(originalGunData); 
     } else {
       const sortedData = [...gunData].sort((a, b) => {
         const aData = calculateExtraColumns(parseFloat(a.Damage), parseFloat(a.FireRate));
@@ -68,26 +66,22 @@ function Main() {
         const aVal = key in aData ? parseFloat(aData[key]) : a[key];
         const bVal = key in bData ? parseFloat(bData[key]) : b[key];
 
-        // For "Gun Name" and "Operators" columns, use localeCompare for string sorting
         if (key === 'GunName' || key === 'Operators') {
           return direction === 'ascending'
             ? aVal.localeCompare(bVal)
             : bVal.localeCompare(aVal);
         }
 
-        // For numeric columns (integers or decimals), perform numeric sorting
         if (!isNaN(aVal) && !isNaN(bVal)) {
           return direction === 'ascending' ? aVal - bVal : bVal - aVal;
         }
 
-        // Fallback if data is missing or incorrect
         return 0;
       });
       setGunData(sortedData);
     }
   };
 
-  // Calculate additional values, optionally applying the extended barrel modifier
   const calculateExtraColumns = (damage, fireRate) => {
     const adjustedDamage = applyExtendedBarrel ? Math.floor(damage * 1.12) : damage;
     const dps = (adjustedDamage * (fireRate / 60)).toFixed(4);
@@ -115,12 +109,12 @@ function Main() {
       if (sortConfig.direction === 'ascending') return ' ▲';
       if (sortConfig.direction === 'descending') return ' ▼';
     }
-    // Show both triangles when in default sort state
+
     return ' ▲▼';
   };  
 
   return (
-<div className="container-fluid my-5"> {/* Changed to container-fluid to make the container take full width */}
+<div className="container-fluid my-5"> 
 
   <h1 className="text-center mb-4">Rainbow Six Siege Gun TTK (Time to Kill) Table</h1>
   <div className="text-right">
@@ -128,8 +122,6 @@ function Main() {
   </div>
   <br></br>
 
-
-  {/* Search inputs for Gun Name and Operators */}
   <div className="d-flex justify-content-center mb-4">
     <div className="form-group" style={{ marginRight: '10px' }}>
       <label htmlFor="gunSearch">Search Gun Name:</label>
@@ -155,7 +147,6 @@ function Main() {
     </div>
   </div>
 
-  {/* Checkbox to apply extended barrel */}
   <div className="d-flex justify-content-center mb-4">
     <div className="form-check">
       <input
@@ -171,7 +162,6 @@ function Main() {
     </div>
   </div>
 
-  {/* Table with full width */}
   <table className="table table-striped table-bordered" style={{ width: '80%' }}>
   <thead className="thead-dark">
     <tr>
@@ -244,7 +234,7 @@ function Main() {
     </tr>
   </thead>
     <tbody>
-      {filteredGunData.map((gun, index) => {
+      {filteredData.map((gun, index) => {
         const {
           adjustedDamage,
           dps,
@@ -275,38 +265,34 @@ function Main() {
     </tbody>
   </table>
 
-      {/* Modal using react-bootstrap */}
-      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>How This Works</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>This is how values are calculated...</p>
-          <p><strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)</p>
-          <p><strong>DPS</strong>: Damage per second, calculated as (Damage * Fire Rate) / 60</p>
-          <p><strong>Bullets to Kill 1 Armor</strong>: 100 / Damage (Rounded up)</p>
-          <p><strong>Bullets to Kill 2 Armor</strong>: 110 / Damage (Rounded up)</p>
-          <p><strong>Bullets to Kill 3 Armor</strong>: 125 / Damage (Rounded up)</p>
-          <p><strong>TTK 1 Armor</strong>: (<i>Bullets to Kill 1 Armor</i> - 1) / (Fire Rate / 60)</p>
-          <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i> - 1) / (Fire Rate / 60)</p>
-          <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
+  <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+    <Modal.Header closeButton>
+      <Modal.Title>How This Works</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
+      <p>This is how values are calculated...</p>
+      <p><strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)</p>
+      <p><strong>DPS</strong>: Damage per second, calculated as (Damage * Fire Rate) / 60</p>
+      <p><strong>Bullets to Kill 1 Armor</strong>: 100 / Damage (Rounded up)</p>
+      <p><strong>Bullets to Kill 2 Armor</strong>: 110 / Damage (Rounded up)</p>
+      <p><strong>Bullets to Kill 3 Armor</strong>: 125 / Damage (Rounded up)</p>
+      <p><strong>TTK 1 Armor</strong>: (<i>Bullets to Kill 1 Armor</i> - 1) / (Fire Rate / 60)</p>
+      <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i> - 1) / (Fire Rate / 60)</p>
+      <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
 
-          <p><strong>Note</strong>: This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
-            the damage) AND that the bullet is shot within 25 m (damage dropoff happens at any farther distance)</p>
+      <p><strong>Note</strong>: This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
+        the damage) AND that the bullet is shot within 25 m (damage dropoff happens at any farther distance)</p>
 
-            <p><strong>Source code</strong>: <a href="https://github.com/Dinesh-Tadepalli/R6GunsTTK" target="_blank">https://github.com/Dinesh-Tadepalli/R6GunsTTK</a></p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-
+        <p><strong>Source code</strong>: <a href="https://github.com/Dinesh-Tadepalli/R6GunsTTK" target="_blank">https://github.com/Dinesh-Tadepalli/R6GunsTTK</a></p>
+    </Modal.Body>
+    <Modal.Footer>
+      <Button variant="secondary" onClick={() => setShowModal(false)}>
+        Close
+      </Button>
+    </Modal.Footer>
+  </Modal>
 
 </div>
-
 
   );
 }
