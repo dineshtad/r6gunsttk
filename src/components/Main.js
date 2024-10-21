@@ -15,7 +15,7 @@ function Main() {
 
   useEffect(() => {
     // Load the CSV file from the public folder
-    fetch('/gunlist.csv')
+    fetch(`${process.env.PUBLIC_URL}/gunlist.csv`)
       .then((response) => response.text())
       .then((csvData) => {
         // Parse the CSV data
