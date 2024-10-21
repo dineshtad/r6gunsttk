@@ -1,0 +1,70 @@
+,GunName,Operators,Damage,FireRate
+0,M4 ,"Striker, Maverick",44,750
+1,M249 ,"Striker, Capitao",48,650
+2,L85A2 ,"Sledge, Thatcher",47,670
+3,AR33 ,"Thatcher, Flores",41,749
+4,R4-C ,"Ash, Ram",39,860
+5,G36C ,"Ash, Iana",38,780
+6,556XI ,"Thermite, Osa",47,690
+7,F2 ,Twitch,37,980
+8,417,"Twitch, Lion, Sens",69,450
+9,OTs-03 ,Glaz,71,380
+10,6P41 ,"Fuze, Finka",46,680
+11,AK-12 ,"Fuze, Ace",40,850
+12,AUG A2 ,"IQ, Wamai",42,720
+13,552 COMMANDO ,"IQ, Grim",43,690
+14,G8A1 ,"IQ, Amaru",37,850
+15,C8-SFW ,Buck,40,837
+16,CAMRS ,"Buck, Brava",69,450
+17,MK17 CQB ,Blackbeard,40,585
+18,SR-25 ,"Blackbeard, Flores",61,450
+19,PARA-308 ,"Capitao, Brava",47,650
+20,TYPE-89 ,Hibana,40,850
+21,C7E ,Jackal,42,800
+22,PDW9 ,"Jackal, Osa",34,800
+23,T-95 LSW ,Ying,46,650
+24,LMG-E ,"Zofia, Ram",41,720
+25,M762 ,Zofia,45,730
+26,BOSG.12.2,"Dokkaebi, Vigil",125,600
+27,Mk 14 EBR ,Dokkaebi,60,450
+28,V308 ,Lion,44,700
+29,SPEAR .308 ,Finka,42,700
+30,AR-15.AR-15.50 ,"Maverick, Tuberao",67,450
+31,AK-74M ,"Nomad, Deimos",44,650
+32,ARX200 ,"Nomad, Iana",47,700
+33,F90 ,Gridlock,38,780
+34,M249 SAW ,Gridlock,48,650
+35,FMG-9 ,"Nokk, Smoke",34,800
+36,CSRX 300 ,Kali,135,450
+37,SC3000K ,Zero,45,800
+38,MP7 ,"Zero, Bandit, Fenrir",32,900
+39,POF-9 ,Sens,35,740
+40,COMMANDO 9 ,"Recruit, Mozzie",36,780
+41,MP5K ,"Mute, Wamai",30,800
+42,UMP45 ,"Pulse, Castle",38,600
+43,MP5 ,"Doc, Rook, Melusi",27,800
+44,P90 ,"Doc, Rook, Solis",22,970
+45,9x19VSN ,"Kapkan, Tachanka, Azami",34,750
+46,DP27 ,Tachanka,60,550
+47,416-C CARBINE ,Jaeger,38,740
+48,9mm C1 ,Frost,36,575
+49,MPX ,"Valkyrie, Warden, Tubarao",26,830
+50,M12 ,Caveira,40,550
+51,MP5SD ,Echo,30,800
+52,VECTOR .45 ACP ,"Mira, Goyo",23,1200
+53,T-5 SMG ,"Lesion, Oryx",28,900
+54,SCORPION EVO 3 A1 ,Ela,23,1080
+55,K1A ,Vigil,36,720
+56,ALDA 5.56 ,Maestro,35,900
+57,ACS12 ,"Maestro, Alibi, Azami",69,300
+58,Mx4 Storm ,Alibi,26,950
+59,AUG A3 ,Kaid,36,700
+60,TCSG12 ,"Kaid, Goyo",63,500
+61,P10 RONI ,"Mozzie, Aruni",26,980
+62,UZKAR-15.50GI ,Thorn,36,700
+63,PCX-33 ,Skopos,36,745
+64,BEARING 9 ,"Glaz, Hibana, Tachanka, Echo, Thunderbird",33,1100
+65,SMG-11 ,"Amaru, Smoke, Mute, Solis",32,1270
+66,SMG-12 ,"Dokkaebi, Vigil, Warden",28,1270
+67,C75 Auto ,"Dokkaebi, Kali, Sentry, Vigil, Thorn",35,1000
+68,SPSMG9 ,"Kali, Clash",33,980
