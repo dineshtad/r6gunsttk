@@ -293,6 +293,8 @@ function Main() {
 
           <p><strong>Note</strong>: This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
             the damage) AND that the bullet is shot within 25 m (damage dropoff happens at any farther distance)</p>
+
+            <p><strong>Source code</strong>: <a href="https://github.com/Dinesh-Tadepalli/R6GunsTTK" target="_blank">https://github.com/Dinesh-Tadepalli/R6GunsTTK</a></p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShowModal(false)}>
