@@ -1,0 +1,68 @@
+,GunName,Operators,Damage,FireRate
+0,M249 ,"Striker, Capitao",48.0,650.0
+1,L85A2 ,"Sledge, Thatcher",47.0,670.0
+2,AR33 ,"Thatcher, Flores",41.0,749.0
+3,R4-C ,"Ash, Ram",39.0,860.0
+4,G36C ,"Ash, Iana",38.0,780.0
+5,556XI ,"Thermite, Osa",47.0,690.0
+6,F2 ,Twitch,37.0,980.0
+7,417 ,"Twitch, Lion, Sens",69.0,450.0
+8,OTs-03 ,Glaz,71.0,380.0
+9,6P41 ,"Fuze, Finka",46.0,680.0
+10,AK-12 ,"Fuze, Ace",40.0,850.0
+11,AUG A2 ,"IQ, Wamai",42.0,720.0
+12,552 COMMANDO ,"IQ, Grim",43.0,690.0
+13,G8A1 ,"IQ, Amaru",37.0,850.0
+14,C8-SFW ,Buck,40.0,837.0
+15,CAMRS ,"Buck, Brava",69.0,450.0
+16,MK17 CQB ,Blackbeard,40.0,585.0
+17,SR-25 ,"Blackbeard, Flores",61.0,450.0
+18,PARA-308 ,"Capitao, Brava",47.0,650.0
+19,TYPE-89 ,Hibana,40.0,850.0
+20,C7E ,Jackal,42.0,800.0
+21,PDW9 ,"Jackal, Osa",34.0,800.0
+22,T-95 LSW ,Ying,46.0,650.0
+23,LMG-E ,"Zofia, Ram",41.0,720.0
+24,M762 ,Zofia,45.0,730.0
+25,Mk 14 EBR ,Dokkaebi,60.0,450.0
+27,V308 ,Lion,44.0,700.0
+28,308 ,Finka,42.0,700.0
+29,50 ,"Maverick, Tuberao",67.0,450.0
+30,AK-74M ,"Nomad, Deimos",44.0,650.0
+31,ARX200 ,"Nomad, Iana",47.0,700.0
+32,F90 ,Gridlock,38.0,780.0
+33,M249 SAW ,Gridlock,48.0,650.0
+34,FMG-9 ,"Nokk, Smoke",34.0,800.0
+35,CSRX 300 ,Kali,135.0,450.0
+36,SC3000K ,Zero,45.0,800.0
+37,MP7 ,"Zero, Bandit, Fenrir",32.0,900.0
+38,POF-9 ,Sens,35.0,740.0
+41,COMMANDO 9 ,"Recruit, Mozzie",36.0,780.0
+42,MP5K ,"Mute, Wamai",30.0,800.0
+43,UMP45 ,"Pulse, Castle",38.0,600.0
+44,MP5 ,"Doc, Rook, Melusi",27.0,800.0
+45,P90 ,"Doc, Rook, Solis",22.0,970.0
+46,9x19VSN ,"Kapkan, Tachanka, Azami",34.0,750.0
+47,DP27 ,Tachanka,60.0,550.0
+48,416-C CARBINE ,Jaeger,38.0,740.0
+49,9mm C1 ,Frost,36.0,575.0
+50,MPX ,"Valkyrie, Warden, Tubarao",26.0,830.0
+51,M12 ,Caveira,40.0,550.0
+52,MP5SD ,Echo,30.0,800.0
+53,45 ACP ,"Mira, Goyo",23.0,1200.0
+54,T-5 SMG ,"Lesion, Oryx",28.0,900.0
+55,SCORPION EVO 3 A1 ,Ela,23.0,1080.0
+56,K1A ,Vigil,36.0,720.0
+57,56 ,Maestro,35.0,900.0
+58,ACS12 ,"Maestro, Alibi, Azami",69.0,300.0
+59,Mx4 Storm ,Alibi,26.0,950.0
+60,AUG A3 ,Kaid,36.0,700.0
+61,TCSG12 ,"Kaid, Goyo",63.0,500.0
+62,P10 RONI ,"Mozzie, Aruni",26.0,980.0
+63,UZK50GI ,Thorn,36.0,700.0
+64,PCX-33 ,Skopos,36.0,745.0
+67,BEARING 9 ,"Glaz, Hibana, Tachanka, Echo, Thunderbird",33.0,1100.0
+68,SMG-11 ,"Amaru, Smoke, Mute, Solis",32.0,1270.0
+69,SMG-12 ,"Dokkaebi, Vigil, Warden",28.0,1270.0
+70,C75 Auto ,"Dokkaebi, Kali, Sentry, Vigil, Thorn",35.0,1000.0
+71,SPSMG9 ,"Kali, Clash",33.0,980.0
