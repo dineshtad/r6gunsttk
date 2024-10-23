@@ -2,7 +2,7 @@
   "name": "r6ttk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://dinesh-tadepalli.github.io/R6GunsTTKtest",
+  "homepage": "http://dinesh-tadepalli.github.io/r6gunsttk",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
