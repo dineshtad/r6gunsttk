@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/R6GunsTTK/static/css/main.6cfa4eec.css",
-    "main.js": "/R6GunsTTK/static/js/main.b574f353.js",
-    "static/js/453.dae0fdc4.chunk.js": "/R6GunsTTK/static/js/453.dae0fdc4.chunk.js",
-    "static/media/bootstrap-icons.woff?": "/R6GunsTTK/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/R6GunsTTK/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/R6GunsTTK/index.html",
-    "main.6cfa4eec.css.map": "/R6GunsTTK/static/css/main.6cfa4eec.css.map",
-    "main.b574f353.js.map": "/R6GunsTTK/static/js/main.b574f353.js.map",
-    "453.dae0fdc4.chunk.js.map": "/R6GunsTTK/static/js/453.dae0fdc4.chunk.js.map"
+    "main.css": "/R6GunsTTKtest/static/css/main.2804ae81.css",
+    "main.js": "/R6GunsTTKtest/static/js/main.f8a3ec32.js",
+    "static/js/453.dae0fdc4.chunk.js": "/R6GunsTTKtest/static/js/453.dae0fdc4.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/R6GunsTTKtest/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/R6GunsTTKtest/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/R6GunsTTKtest/index.html",
+    "main.2804ae81.css.map": "/R6GunsTTKtest/static/css/main.2804ae81.css.map",
+    "main.f8a3ec32.js.map": "/R6GunsTTKtest/static/js/main.f8a3ec32.js.map",
+    "453.dae0fdc4.chunk.js.map": "/R6GunsTTKtest/static/js/453.dae0fdc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cfa4eec.css",
-    "static/js/main.b574f353.js"
+    "static/css/main.2804ae81.css",
+    "static/js/main.f8a3ec32.js"
   ]
 }
