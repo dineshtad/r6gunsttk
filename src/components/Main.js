@@ -16,6 +16,13 @@ function Main() {
   const [operatorSearch, setOperatorSearch] = useState(''); 
 
   useEffect(() => {
+    const savedMode = sessionStorage.getItem('darkMode');
+    if (savedMode) {
+      setDarkMode(JSON.parse(savedMode)); 
+    }
+  }, []);
+  
+  useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/gunlist.csv`)
       .then((response) => response.text())
       .then((csvData) => {
@@ -147,10 +154,15 @@ function Main() {
     variant="dark" 
     className="ml-3"
     style={{ marginRight: '20px', marginTop: '10px' }}  
-    onClick={() => setDarkMode(!darkMode)}>
-      {darkMode ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-fill"></i>} 
-      &nbsp;
-      {darkMode ? ' Light Mode' : ' Dark Mode'}
+    onClick={() => {
+      const newMode = !darkMode;
+      setDarkMode(newMode);
+      sessionStorage.setItem('darkMode', JSON.stringify(newMode)); // Save the mode to sessionStorage
+    }}
+  >
+    {darkMode ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-fill"></i>} 
+    &nbsp;
+    {darkMode ? ' Light Mode' : ' Dark Mode'}
   </Button>
 </div>
 
@@ -218,7 +230,7 @@ function Main() {
         Apply Extended Barrel
       </label>
     </div>
-    <div className="form-check">
+    <div className="form-check" style={{ marginRight: '20px' }}>
       <input
         className="form-check-input"
         type="checkbox"
@@ -230,6 +242,21 @@ function Main() {
       <label className="form-check-label ml-2" htmlFor="includePistols">
         Include Pistols/Revolvers
       </label>
+    </div>
+    <div>
+      <a
+        href="#"
+        className="clear-filters"
+        onClick={() => {
+          setGunSearch('');
+          setGunTypeFilter('');
+          setOperatorSearch('');
+          setIncludePistols(false);
+          setApplyExtendedBarrel(false);
+        }}
+      >
+        Clear Filters
+      </a>
     </div>
   </div>
   <div className="table-container"> 

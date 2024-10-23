@@ -31,6 +31,15 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%; 
+  background-color: #fff; 
+}
+
+.dark-mode html, .dark-mode body {
+  background-color: #000 !important; 
+}
+
+html {
+  overflow-y: scroll;
 }
 
 .container {
