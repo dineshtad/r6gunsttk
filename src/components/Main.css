@@ -33,9 +33,25 @@ html, body {
   height: 100%; 
 }
 
-/* html {
+html {
   overflow-y: scroll;
-} */
+}
+
+.table-responsive {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Apply only for smaller screens like iPhones */
+@media screen and (max-width: 768px) {
+  .table {
+    width: 100%; /* Ensure table doesn't extend beyond the screen width */
+  }
+
+  .table-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .container {
   max-width: 900px;

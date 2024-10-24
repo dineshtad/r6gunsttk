@@ -260,6 +260,7 @@ function Main() {
     </div>
   </div>
   <div className="table-container"> 
+  <div className="table-responsive">
   <table className="table table-striped table-bordered" style={{ width: '80%' }}>
     <thead className="thead-dark">
       <tr>
@@ -369,6 +370,7 @@ function Main() {
       })}
     </tbody>
   </table>
+  </div>
   </div>
 
    <div className="bottom-bar"></div>
