@@ -153,7 +153,7 @@ function Main() {
   <Button 
     variant="dark" 
     className="ml-3"
-    style={{ marginRight: '20px', marginTop: '10px' }}  
+    style={{ marginRight: '20px', marginTop: '0px' }}  
     onClick={() => {
       const newMode = !darkMode;
       setDarkMode(newMode);
@@ -218,7 +218,7 @@ function Main() {
 </div>
 
 
-  <div className="d-flex justify-content-center mb-4">
+  <div className="d-flex justify-content-center mb-4 filter options">
     <div className="form-check" style={{ marginRight: '20px' }}>
       <input
         className="form-check-input"

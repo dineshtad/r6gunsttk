@@ -1,7 +1,9 @@
 .top-bar, .bottom-bar {
   width: 100%;
-  height: 50px; 
-  background-color: #fff; 
+  height: 80px; 
+  background-color: #fff;
+  display: flex;
+  align-items: center; 
 }
 
 .dark-mode .top-bar, .dark-mode .bottom-bar {
@@ -89,6 +91,22 @@ html {
 
   .filter-container .form-group:last-child {
     margin-right: 0; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-options {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0 20px; 
+  }
+
+  .filter-options .form-check {
+    margin-bottom: 10px; 
+  }
+
+  .clear-filters {
+    margin-top: 10px; 
   }
 }
 
