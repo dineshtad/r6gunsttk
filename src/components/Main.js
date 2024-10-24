@@ -172,50 +172,51 @@ function Main() {
   </div>
   <br></br>
 
-  <div className="d-flex justify-content-center mb-4">
-    <div className="form-group" style={{ marginRight: '10px' }}>
-      <label htmlFor="gunSearch">Search Gun Name:</label>
-      <input
-        id="gunSearch"
-        className="form-control"
-        type="text"
-        value={gunSearch}
-        onChange={(e) => setGunSearch(e.target.value)}
-        placeholder="Enter gun name"
-      />
-    </div>
-    <div className="form-group" style={{ marginRight: '10px' }}>
-      <label htmlFor="gunTypeFilter">Filter Gun Type:</label>
-      <select
-        id="gunTypeFilter"
-        className="form-control"
-        value={gunTypeFilter}
-        onChange={(e) => setGunTypeFilter(e.target.value)}
-      >
-        <option value="">All Guns</option>
-        <option value="AR">AR</option>
-        <option value="SMG">SMG</option>
-        <option value="DMR">DMR</option>
-        <option value="Slug Shotgun">Slug Shotgun</option>
-        <option value="Sniper">Sniper</option>
-        <option value="LMG">LMG</option>
-        <option value="Machine Pistol">Machine Pistol</option>
-        <option value="Pistol">Pistol</option>
-        <option value="Revolver">Revolver</option>
-      </select>
-    </div>
-    <div className="form-group">
-      <label htmlFor="operatorSearch">Search Operators:</label>
-      <input
-        id="operatorSearch"
-        className="form-control"
-        type="text"
-        value={operatorSearch}
-        onChange={(e) => setOperatorSearch(e.target.value)}
-        placeholder="Enter operator name"
-      />
-    </div>
+  <div className="d-flex justify-content-center filter-container mb-4">
+  <div className="form-group">
+    <label htmlFor="gunSearch">Search Gun Name:</label>
+    <input
+      id="gunSearch"
+      className="form-control"
+      type="text"
+      value={gunSearch}
+      onChange={(e) => setGunSearch(e.target.value)}
+      placeholder="Enter gun name"
+    />
   </div>
+  <div className="form-group">
+    <label htmlFor="gunTypeFilter">Filter Gun Type:</label>
+    <select
+      id="gunTypeFilter"
+      className="form-control"
+      value={gunTypeFilter}
+      onChange={(e) => setGunTypeFilter(e.target.value)}
+    >
+      <option value="">All Guns</option>
+      <option value="AR">AR</option>
+      <option value="SMG">SMG</option>
+      <option value="DMR">DMR</option>
+      <option value="Slug Shotgun">Slug Shotgun</option>
+      <option value="Sniper">Sniper</option>
+      <option value="LMG">LMG</option>
+      <option value="Machine Pistol">Machine Pistol</option>
+      <option value="Pistol">Pistol</option>
+      <option value="Revolver">Revolver</option>
+    </select>
+  </div>
+  <div className="form-group">
+    <label htmlFor="operatorSearch">Search Operators:</label>
+    <input
+      id="operatorSearch"
+      className="form-control"
+      type="text"
+      value={operatorSearch}
+      onChange={(e) => setOperatorSearch(e.target.value)}
+      placeholder="Enter operator name"
+    />
+  </div>
+</div>
+
 
   <div className="d-flex justify-content-center mb-4">
     <div className="form-check" style={{ marginRight: '20px' }}>
