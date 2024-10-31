@@ -397,7 +397,7 @@ function Main() {
         <p><strong>Note:</strong> This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
           the damage) AND that the bullet is shot within 25 meters (damage dropoff happens at any farther distance).</p>
 
-        <p><strong>Source code:</strong> <a href="https://github.com/Dinesh-Tadepalli/R6GunsTTK" target="_blank">https://github.com/Dinesh-Tadepalli/R6GunsTTK</a></p>
+        <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank">https://github.com/dineshtad/r6gunsttk</a></p>
         <p><strong>Spreadsheet:</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank">https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s</a></p>
       </Modal.Body>
       <Modal.Footer className={darkMode ? 'bg-dark text-light' : ''}>
