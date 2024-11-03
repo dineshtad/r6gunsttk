@@ -384,6 +384,9 @@ function Main() {
         <Modal.Title>How This Works</Modal.Title>
       </Modal.Header>
       <Modal.Body className={darkMode ? 'bg-dark text-light' : ''}>
+        <p>This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
+          the damage) AND that the bullet is shot within 25 meters (damage dropoff happens at any farther distance)</p>
+        <p>Also note that not every operator has access to the extended barrel.</p>
         <p>This is how values are calculated...</p>
         <p><strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)</p>
         <p><strong>DPS</strong>: Damage per second, calculated as (Damage * Fire Rate) / 60</p>
@@ -392,10 +395,7 @@ function Main() {
         <p><strong>Bullets to Kill 3 Armor</strong>: 125 / Damage (Rounded up)</p>
         <p><strong>TTK 1 Armor</strong>: (<i>Bullets to Kill 1 Armor</i> - 1) / (Fire Rate / 60)</p>
         <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i><i> - 1) / (Fire Rate / 60)</i></p>
-        <p><strong>Bullets to Kill 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
-
-        <p><strong>Note:</strong> This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
-          the damage) AND that the bullet is shot within 25 meters (damage dropoff happens at any farther distance).</p>
+        <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
 
         <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank">https://github.com/dineshtad/r6gunsttk</a></p>
         <p><strong>Spreadsheet:</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank">https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s</a></p>
