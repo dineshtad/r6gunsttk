@@ -19,8 +19,16 @@ function Main() {
     const savedMode = sessionStorage.getItem('darkMode');
     if (savedMode) {
       setDarkMode(JSON.parse(savedMode)); 
+    } else {
+      const currentHour = new Date().getHours();
+
+      // Set dark mode if it's past 7 p.m. or before 7 a.m.
+      const isNightTime = currentHour >= 19 || currentHour < 7;
+      setDarkMode(isNightTime);
+      sessionStorage.setItem('darkMode', JSON.stringify(isNightTime));
     }
   }, []);
+  
   
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/gunlist.csv`)
