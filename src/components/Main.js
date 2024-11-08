@@ -16,6 +16,10 @@ function Main() {
   const [operatorSearch, setOperatorSearch] = useState(''); 
 
   useEffect(() => {
+    document.title = "R6 Gun TTK Table"; 
+  }, []);  
+
+  useEffect(() => {
     const savedMode = sessionStorage.getItem('darkMode');
     if (savedMode) {
       setDarkMode(JSON.parse(savedMode)); 
