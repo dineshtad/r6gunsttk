@@ -397,8 +397,8 @@ function Main() {
       </Modal.Header>
       <Modal.Body className={darkMode ? 'bg-dark text-light' : ''}>
         <p>This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
-          the damage) AND that the bullet is shot within 25 meters (damage dropoff happens at any farther distance)</p>
-        <p>Also note that not every operator has access to the extended barrel.</p>
+          the damage) AND that the bullet is shot within 25 meters (for most guns, damage dropoff happens at any farther distance).</p>
+        <p>Also note that not every gun has access to the extended barrel.</p>
         <p>This is how values are calculated...</p>
         <p><strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)</p>
         <p><strong>DPS</strong>: Damage per second, calculated as (Damage * Fire Rate) / 60</p>
