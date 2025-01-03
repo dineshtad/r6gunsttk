@@ -16,7 +16,7 @@
 14,G8A1 ,LMG,"IQ, Amaru",37,850
 15,C8-SFW ,AR,Buck,40,837
 16,CAMRS ,DMR,"Buck, Brava",69,450
-17,MK17 CQB ,AR,Blackbeard,40,585
+17,MK17 CQB ,AR,Blackbeard,44,585
 18,SR-25 ,DMR,"Blackbeard, Flores",61,450
 19,PARA-308 ,AR,"Capitao, Brava",47,650
 20,TYPE-89 ,AR,Hibana,40,850
@@ -76,7 +76,7 @@
 74,PMM,Pistol,"Glaz, Fuze, Finka, Osa, Kapkan, Tachanka",61,500
 75,P12,Pistol,"Blitz, IQ, Jager, Blitz, Wamai",44,500
 76,MK1 9mm,Pistol,"Buck, Iana, Ram, Frost",48,500
-77,D-50,Pistol (Deagle),"Blackbeard, Nokk, Valkyrie, Azami",71,500
+77,D-50,Pistol (Deagle),"Nokk, Valkyrie, Azami",71,500
 78,PRB92,Pistol,"Capitao, Nomad, Aruni",42,500
 79,P229,Pistol,"Hibana, Grim, Echo, Goyo, Skopos",51,500
 80,USP40,Pistol,"Jackal, Brava, Mira, Oryx",48,500
