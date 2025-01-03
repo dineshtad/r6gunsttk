@@ -161,30 +161,32 @@ function Main() {
 <div className={`${darkMode ? 'dark-mode' : ''}`}> 
 
 <div className="top-bar d-flex justify-content-between">
-  <div></div> 
-  <Button 
-    variant="dark" 
+  <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
+    <span>Last Updated: 1/2/25</span>
+  </div>
+  <Button
+    variant="dark"
     className="ml-3"
-    style={{ marginRight: '20px', marginTop: '0px' }}  
+    style={{ marginRight: '20px', marginTop: '0px' }}
     onClick={() => {
       const newMode = !darkMode;
       setDarkMode(newMode);
       sessionStorage.setItem('darkMode', JSON.stringify(newMode)); // Save the mode to sessionStorage
     }}
   >
-    {darkMode ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-fill"></i>} 
+    {darkMode ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-fill"></i>}
     &nbsp;
     {darkMode ? ' Light Mode' : ' Dark Mode'}
   </Button>
 </div>
 
-  <h1 className="text-center mb-4">Rainbow Six Siege Gun TTK (Time to Kill) Table</h1>
-  <div className="text-right">
-    <a href="#" onClick={() => setShowModal(true)}>How this works</a>
-  </div>
-  <br></br>
+<h1 className="text-center mb-4">Rainbow Six Siege Gun TTK (Time to Kill) Table</h1>
+<div className="text-right">
+  <a href="#" onClick={() => setShowModal(true)}>How this works</a>
+</div>
+<br></br>
 
-  <div className="d-flex justify-content-center filter-container mb-4">
+<div className="d-flex justify-content-center filter-container mb-4">
   <div className="form-group">
     <label htmlFor="gunSearch">Search Gun Name:</label>
     <input
