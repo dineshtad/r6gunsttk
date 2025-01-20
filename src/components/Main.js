@@ -21,9 +21,25 @@ function Main() {
 
   useEffect(() => {
     const savedMode = sessionStorage.getItem('darkMode');
+    // Check sessionStorage
     if (savedMode) {
       setDarkMode(JSON.parse(savedMode)); 
-    } else {
+    } 
+    // Check the OS preference for dark or light mode
+    else if (window.matchMedia) {
+      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersLightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+      if (prefersDarkMode) {
+        setDarkMode(true);
+        sessionStorage.setItem('darkMode', JSON.stringify(true));
+      } else if (prefersLightMode) {
+        setDarkMode(false);
+        sessionStorage.setItem('darkMode', JSON.stringify(false));
+      }
+    } 
+    // If the user's operating system does not give any preference, set darkmode if it is nighttime
+    else {
       const currentHour = new Date().getHours();
 
       // Set dark mode if it's past 7 p.m. or before 7 a.m.
@@ -31,6 +47,28 @@ function Main() {
       setDarkMode(isNightTime);
       sessionStorage.setItem('darkMode', JSON.stringify(isNightTime));
     }
+  }, []);
+
+  useEffect(() => {
+    // Function to handle changes in OS preference
+    const handlePreferenceChange = (event) => {
+      const prefersDarkMode = event.matches;
+  
+      // Update the state and sessionStorage based on the new preference
+      setDarkMode(prefersDarkMode);
+      sessionStorage.setItem('darkMode', JSON.stringify(prefersDarkMode));
+    };
+  
+    // Create a media query list to detect dark mode preference
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  
+    // Attach the event listener
+    darkModeMediaQuery.addEventListener('change', handlePreferenceChange);
+  
+    // Cleanup function to remove the event listener
+    return () => {
+      darkModeMediaQuery.removeEventListener('change', handlePreferenceChange);
+    };
   }, []);
   
   
@@ -162,7 +200,7 @@ function Main() {
 
 <div className="top-bar d-flex justify-content-between">
   <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
-    <span>Last Updated: 1/2/25</span>
+    <span>Last Updated: 1/19/25</span>
   </div>
   <Button
     variant="dark"
@@ -276,7 +314,10 @@ function Main() {
   </div>
   <div className="table-container"> 
   <div className="table-responsive">
-  <table className="table table-striped table-bordered" style={{ width: '80%' }}>
+  <table
+  className={`table table-striped table-bordered ${darkMode ? 'table-dark' : ''}`}
+  style={{ width: '80%' }}
+  >
     <thead className="thead-dark">
       <tr>
         <th style={{ width: '8%' }} onClick={() => handleSort('GunName')}>
@@ -408,7 +449,7 @@ function Main() {
         <p><strong>Bullets to Kill 2 Armor</strong>: 110 / Damage (Rounded up)</p>
         <p><strong>Bullets to Kill 3 Armor</strong>: 125 / Damage (Rounded up)</p>
         <p><strong>TTK 1 Armor</strong>: (<i>Bullets to Kill 1 Armor</i> - 1) / (Fire Rate / 60)</p>
-        <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i><i> - 1) / (Fire Rate / 60)</i></p>
+        <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i> - 1) / (Fire Rate / 60)</p>
         <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
 
         <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank">https://github.com/dineshtad/r6gunsttk</a></p>

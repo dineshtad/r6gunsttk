@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Debug React App",
+        "url": "http://localhost:3000/r6gunsttk",
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMaps": true,
+        "breakOnLoad": true,
+        "skipFiles": ["<node_internals>/**"]
+      }
+    ]
+  }
+  
