@@ -1,92 +1,92 @@
-,GunName,GunType,Operators,Damage,FireRate
-0,M4 ,AR,"Striker, Maverick",44,750
-1,M249 ,LMG,"Striker, Capitao",48,650
-2,L85A2 ,AR,"Sledge, Thatcher",47,670
-3,AR33 ,AR,"Thatcher, Flores",41,749
-4,R4-C ,AR,"Ash, Ram",39,860
-5,G36C ,AR,"Ash, Iana",38,780
-6,556XI ,AR,"Thermite, Osa",47,690
-7,F2 ,AR,Twitch,37,980
-8,417,DMR,"Twitch, Lion, Sens",69,450
-9,OTs-03 ,Sniper/DMR,Glaz,71,380
-10,6P41 ,LMG,"Fuze, Finka",46,680
-11,AK-12 ,AR,"Fuze, Ace",40,850
-12,AUG A2 ,AR,"IQ, Wamai",42,720
-13,552 COMMANDO ,AR,"IQ, Grim",43,690
-14,G8A1 ,LMG,"IQ, Amaru",37,850
-15,C8-SFW ,AR,Buck,40,837
-16,CAMRS ,DMR,"Buck, Brava",69,450
-17,MK17 CQB ,AR,Blackbeard,44,585
-18,SR-25 ,DMR,"Blackbeard, Flores",61,450
-19,PARA-308 ,AR,"Capitao, Brava",47,650
-20,TYPE-89 ,AR,Hibana,40,850
-21,C7E ,AR,Jackal,42,800
-22,PDW9 ,SMG,"Jackal, Osa",34,800
-23,T-95 LSW ,LMG,Ying,46,650
-24,LMG-E ,LMG,"Zofia, Ram",41,720
-25,M762 ,AR,Zofia,45,730
-26,BOSG.12.2,Slug Shotgun/Sniper,"Dokkaebi, Vigil",125,600
-27,Mk 14 EBR ,DMR,Dokkaebi,60,450
-28,V308 ,AR,Lion,44,700
-29,SPEAR .308 ,AR,Finka,42,700
-30,AR-15.AR-15.50 ,DMR,"Maverick, Tubarao",67,450
-31,AK-74M ,AR,"Nomad, Deimos",44,650
-32,ARX200 ,AR,"Nomad, Iana",47,700
-33,F90 ,AR,Gridlock,38,780
-34,M249 SAW ,LMG,Gridlock,48,650
-35,FMG-9 ,SMG,"Nokk, Smoke",34,800
-36,CSRX 300 ,Sniper,Kali,135,450
-37,SC3000K ,AR,Zero,45,800
-38,MP7 ,SMG,"Zero, Bandit, Fenrir",32,900
-39,POF-9 ,AR,Sens,35,740
-40,COMMANDO 9 ,AR,"Recruit, Mozzie",36,780
-41,MP5K ,SMG,"Mute, Wamai",30,800
-42,UMP45 ,SMG,"Pulse, Castle",38,600
-43,MP5 ,SMG,"Doc, Rook, Melusi",27,800
-44,P90 ,SMG,"Doc, Rook, Solis",22,970
-45,9x19VSN ,SMG,"Kapkan, Tachanka, Azami",34,750
-46,DP27 ,LMG,Tachanka,60,550
-47,416-C CARBINE ,AR,Jager,38,740
-48,9mm C1 ,SMG,Frost,36,575
-49,MPX ,SMG,"Valkyrie, Warden, Tubarao",26,830
-50,M12 ,SMG,Caveira,40,550
-51,MP5SD ,SMG,Echo,30,800
-52,VECTOR .45 ACP ,SMG,"Mira, Goyo",23,1200
-53,T-5 SMG ,SMG,"Lesion, Oryx",28,900
-54,SCORPION EVO 3 A1 ,SMG,Ela,23,1080
-55,K1A ,SMG,Vigil,36,720
-56,ALDA 5.56 ,LMG,Maestro,35,900
-57,ACS12 ,Slug Shotgun/DMR,"Maestro, Alibi, Azami",69,300
-58,Mx4 Storm ,SMG,Alibi,26,950
-59,AUG A3 ,SMG,Kaid,36,700
-60,TCSG12 ,Slug Shotgun/DMR,"Kaid, Goyo",63,500
-61,P10 RONI ,SMG,"Mozzie, Aruni",26,980
-62,UZKAR-15.50GI ,SMG,Thorn,36,700
-63,PCX-33 ,AR,Skopos,36,745
-64,BEARING 9 ,Machine Pistol,"Glaz, Hibana, Tachanka, Echo, Thunderbird",33,1100
-65,SMG-11 ,Machine Pistol,"Amaru, Smoke, Mute, Solis",32,1270
-66,SMG-12 ,Machine Pistol,"Dokkaebi, Vigil, Warden",28,1270
-67,C75 Auto ,Machine Pistol,"Dokkaebi, Kali, Sentry, Vigil, Thorn",35,1000
-68,SPSMG9 ,Machine Pistol,"Kali, Clash",33,980
-69,5.7 USG,Pistol,"Striker, Ash, Thermite, Nokk, Zero, Castle, Pulse, Fenrir",42,500
-70,P226 MK 25,Pistol,"Sledge, Thatcher, Kali, Smoke, Mute, Tubarao",50,500
-71,M45 MEUSOC,Pistol,"Ash, Thermite, Castle, Pulse",58,500
-72,P9,Pistol,"Twitch, Montagne, Lion, Ace, Doc, Rook",45,500
-73,LFP586,Revolver,"Twitch, Montagne, Lion, Doc, Rook, Kaid",78,500
-74,PMM,Pistol,"Glaz, Fuze, Finka, Osa, Kapkan, Tachanka",61,500
-75,P12,Pistol,"Blitz, IQ, Jager, Blitz, Wamai",44,500
-76,MK1 9mm,Pistol,"Buck, Iana, Ram, Frost",48,500
-77,D-50,Pistol (Deagle),"Nokk, Valkyrie, Azami",71,500
-78,PRB92,Pistol,"Capitao, Nomad, Aruni",42,500
-79,P229,Pistol,"Hibana, Grim, Echo, Goyo, Skopos",51,500
-80,USP40,Pistol,"Jackal, Brava, Mira, Oryx",48,500
-81,Q-929,Pistol,"Ying, Leison, Thunderbird",60,500
-82,RG15,Pistol  (Scoped),"Zofia, Ela, Melusi",38,500
-83,GSH-18,Pistol,"Fuze, Finka, Flores, Kapkan, Tachanka",44,500
-84,1911 TACOPS,Pistol,"Maverick, Thorn",55,500
-85,.44 Mag Semi-Auto,Pistol (Magnified Scope),"Nomad, Kaid",54,500
-86,SDP 9mm,Pistol,"Gridlock, Sens, Mozzie",47,500
-87,.44 Vendetta,Pistol (Scoped),Deimos,78,500
-88,LUISON,Pistol,Caveira,65,450
-89,KERATOS .357,Revolver,"Maestro, Alibi, Wamai",78,500
-90,P-10C,Pistol,"Clash, Warden",40,500
+,GunName,GunType,Operators,OperatorType,Damage,FireRate
+0,M4 ,AR,"Striker, Maverick",Attacker,44,750
+1,M249 ,LMG,"Striker, Capitao",Attacker,48,650
+2,L85A2 ,AR,"Sledge, Thatcher",Attacker,47,670
+3,AR33 ,AR,"Thatcher, Flores",Attacker,41,749
+4,R4-C ,AR,"Ash, Ram",Attacker,39,860
+5,G36C ,AR,"Ash, Iana",Attacker,38,780
+6,556XI ,AR,"Thermite, Osa",Attacker,47,690
+7,F2 ,AR,Twitch,Attacker,37,980
+8,417,DMR,"Twitch, Lion, Sens",Attacker,69,450
+9,OTs-03 ,Sniper/DMR,Glaz,Attacker,71,380
+10,6P41 ,LMG,"Fuze, Finka",Attacker,46,680
+11,AK-12 ,AR,"Fuze, Ace",Attacker,40,850
+12,AUG A2 ,AR,"IQ, Wamai","Attacker, Defender",42,720
+13,552 COMMANDO ,AR,"IQ, Grim",Attacker,43,690
+14,G8A1 ,LMG,"IQ, Amaru",Attacker,37,850
+15,C8-SFW ,AR,Buck,Attacker,40,837
+16,CAMRS ,DMR,"Buck, Brava",Attacker,69,450
+17,MK17 CQB ,AR,Blackbeard,Attacker,44,585
+18,SR-25 ,DMR,"Blackbeard, Flores",Attacker,61,450
+19,PARA-308 ,AR,"Capitao, Brava",Attacker,47,650
+20,TYPE-89 ,AR,Hibana,Attacker,40,850
+21,C7E ,AR,Jackal,Attacker,42,800
+22,PDW9 ,SMG,"Jackal, Osa",Attacker,34,800
+23,T-95 LSW ,LMG,Ying,Attacker,46,650
+24,LMG-E ,LMG,"Zofia, Ram",Attacker,41,720
+25,M762 ,AR,Zofia,Attacker,45,730
+26,BOSG.12.2,Slug Shotgun/Sniper,"Dokkaebi, Vigil","Attacker, Defender",125,600
+27,Mk 14 EBR ,DMR,Dokkaebi,Attacker,60,450
+28,V308 ,AR,Lion,Attacker,44,700
+29,SPEAR .308 ,AR,Finka,Attacker,42,700
+30,AR-15.AR-15.50 ,DMR,"Maverick, Tubarao","Attacker, Defender",67,450
+31,AK-74M ,AR,"Nomad, Deimos",Attacker,44,650
+32,ARX200 ,AR,"Nomad, Iana",Attacker,47,700
+33,F90 ,AR,Gridlock,Attacker,38,780
+34,M249 SAW ,LMG,Gridlock,Attacker,48,650
+35,FMG-9 ,SMG,"Nokk, Smoke","Attacker, Defender",34,800
+36,CSRX 300 ,Sniper,Kali,Attacker,135,450
+37,SC3000K ,AR,Zero,Attacker,45,800
+38,MP7 ,SMG,"Zero, Bandit, Fenrir","Attacker, Defender",32,900
+39,POF-9 ,AR,Sens,Attacker,35,740
+40,COMMANDO 9 ,AR,"Recruit, Mozzie",Defender,36,780
+41,MP5K ,SMG,"Mute, Wamai",Defender,30,800
+42,UMP45 ,SMG,"Pulse, Castle",Defender,38,600
+43,MP5 ,SMG,"Doc, Rook, Melusi",Defender,27,800
+44,P90 ,SMG,"Doc, Rook, Solis",Defender,22,970
+45,9x19VSN ,SMG,"Kapkan, Tachanka, Azami",Defender,34,750
+46,DP27 ,LMG,Tachanka,Defender,60,550
+47,416-C CARBINE ,AR,Jager,Defender,38,740
+48,9mm C1 ,SMG,Frost,Defender,36,575
+49,MPX ,SMG,"Valkyrie, Warden, Tubarao",Defender,26,830
+50,M12 ,SMG,Caveira,Defender,40,550
+51,MP5SD ,SMG,Echo,Defender,30,800
+52,VECTOR .45 ACP ,SMG,"Mira, Goyo",Defender,23,1200
+53,T-5 SMG ,SMG,"Lesion, Oryx",Defender,28,900
+54,SCORPION EVO 3 A1 ,SMG,Ela,Defender,23,1080
+55,K1A ,SMG,Vigil,Defender,36,720
+56,ALDA 5.56 ,LMG,Maestro,Defender,35,900
+57,ACS12 ,Slug Shotgun/DMR,"Maestro, Alibi, Azami",Defender,69,300
+58,Mx4 Storm ,SMG,Alibi,Defender,26,950
+59,AUG A3 ,SMG,Kaid,Defender,36,700
+60,TCSG12 ,Slug Shotgun/DMR,"Kaid, Goyo",Defender,75,500
+61,P10 RONI ,SMG,"Mozzie, Aruni",Defender,26,980
+62,UZKAR-15.50GI ,SMG,Thorn,Defender,36,700
+63,PCX-33 ,AR,Skopos,Defender,36,745
+64,BEARING 9 ,Machine Pistol,"Glaz, Hibana, Tachanka, Echo, Thunderbird","Attacker, Defender",33,1100
+65,SMG-11 ,Machine Pistol,"Amaru, Smoke, Mute, Solis","Attacker, Defender",32,1270
+66,SMG-12 ,Machine Pistol,"Dokkaebi, Vigil, Warden","Attacker, Defender",28,1270
+67,C75 Auto ,Machine Pistol,"Dokkaebi, Kali, Sentry, Vigil, Thorn","Attacker, Defender",35,1000
+68,SPSMG9 ,Machine Pistol,"Kali, Clash","Attacker, Defender",33,980
+69,5.7 USG,Pistol,"Striker, Ash, Thermite, Nokk, Zero, Castle, Pulse, Fenrir","Attacker, Defender",42,500
+70,P226 MK 25,Pistol,"Sledge, Thatcher, Kali, Smoke, Mute, Tubarao","Attacker, Defender",50,500
+71,M45 MEUSOC,Pistol,"Ash, Thermite, Castle, Pulse","Attacker, Defender",58,500
+72,P9,Pistol,"Twitch, Montagne, Lion, Ace, Doc, Rook","Attacker, Defender",45,500
+73,LFP586,Revolver,"Twitch, Montagne, Lion, Doc, Rook, Kaid","Attacker, Defender",78,500
+74,PMM,Pistol,"Glaz, Fuze, Finka, Osa, Kapkan, Tachanka","Attacker, Defender",61,500
+75,P12,Pistol,"Blitz, IQ, Jager, Blitz, Wamai","Attacker, Defender",44,500
+76,MK1 9mm,Pistol,"Buck, Iana, Ram, Frost","Attacker, Defender",48,500
+77,D-50,Pistol (Deagle),"Nokk, Valkyrie, Azami","Attacker, Defender",71,500
+78,PRB92,Pistol,"Capitao, Nomad, Aruni","Attacker, Defender",42,500
+79,P229,Pistol,"Hibana, Grim, Echo, Goyo, Skopos","Attacker, Defender",51,500
+80,USP40,Pistol,"Jackal, Brava, Mira, Oryx","Attacker, Defender",48,500
+81,Q-929,Pistol,"Ying, Leison, Thunderbird","Attacker, Defender",60,500
+82,RG15,Pistol  (Scoped),"Zofia, Ela, Melusi","Attacker, Defender",38,500
+83,GSH-18,Pistol,"Fuze, Finka, Flores, Kapkan, Tachanka","Attacker, Defender",44,500
+84,1911 TACOPS,Pistol,"Maverick, Thorn","Attacker, Defender",55,500
+85,.44 Mag Semi-Auto,Pistol (Magnified Scope),"Nomad, Kaid","Attacker, Defender",54,500
+86,SDP 9mm,Pistol,"Gridlock, Sens, Mozzie","Attacker, Defender",47,500
+87,.44 Vendetta,Revolver (Scoped),Deimos,Attacker,78,500
+88,LUISON,Pistol,Caveira,Defender,65,450
+89,KERATOS .357,Revolver,"Maestro, Alibi, Wamai",Defender,78,500
+90,P-10C,Pistol,"Clash, Warden",Defender,40,500
