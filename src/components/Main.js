@@ -13,7 +13,8 @@ function Main() {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'default' }); 
   const [gunSearch, setGunSearch] = useState(''); 
   const [gunTypeFilter, setGunTypeFilter] = useState(''); 
-  const [operatorSearch, setOperatorSearch] = useState(''); 
+  const [operatorSearch, setOperatorSearch] = useState('');
+  const [operatorTypeFilter, setOperatorTypeFilter] = useState('Both');  
 
   useEffect(() => {
     document.title = "R6 Gun TTK Table"; 
@@ -80,7 +81,7 @@ function Main() {
           header: true,
           complete: (result) => {
             const cleanedData = result.data.filter(
-              (row) => row.GunName && row.Operators && row.Damage && row.FireRate
+              (row) => row.GunName && row.Operators && row.Damage && row.FireRate && row.OperatorType
             );
             setGunData(cleanedData);
             setOriginalGunData(cleanedData); 
@@ -117,11 +118,19 @@ function Main() {
           : gunTypeFilter === 'Revolver'
           ? gun.GunType.toLowerCase().includes('revolver')
           : gun.GunType.toLowerCase().includes(gunTypeFilter.toLowerCase()));
-    
+
+    const matchesOperatorType = 
+    operatorTypeFilter === 'Both' || 
+    gun.OperatorType === operatorTypeFilter || 
+    gun.OperatorType === 'Attacker, Defender' || 
+    (operatorTypeFilter === 'Attacker' && gun.OperatorType.includes('Attacker')) ||
+    (operatorTypeFilter === 'Defender' && gun.OperatorType.includes('Defender'));
+  
     return (
       gun.GunName.toLowerCase().includes(gunSearch.trim().toLowerCase()) &&
       gun.Operators.toLowerCase().includes(operatorSearch.trim().toLowerCase()) &&
       matchesGunType && 
+      matchesOperatorType &&
       (includePistolsOrRevolvers || !isPistolOrRevolver)
     );
   });
@@ -266,6 +275,19 @@ function Main() {
       onChange={(e) => setOperatorSearch(e.target.value)}
       placeholder="Enter operator name"
     />
+  </div>
+  <div className="form-group">
+    <label htmlFor="operatorTypeFilter">Filter Operator Type:</label>
+    <select
+      id="operatorTypeFilter"
+      className="form-control"
+      value={operatorTypeFilter}
+      onChange={(e) => setOperatorTypeFilter(e.target.value)}
+    >
+      <option value="Both">Both</option>
+      <option value="Attacker">Attacker</option>
+      <option value="Defender">Defender</option>
+    </select>
   </div>
 </div>
 
