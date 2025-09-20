@@ -209,7 +209,7 @@ function Main() {
 
 <div className="top-bar d-flex justify-content-between">
   <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
-    <span>Last Updated: Feb/1/25</span>
+    <span>Last Updated: Sept/19/25</span>
   </div>
   <Button
     variant="dark"
