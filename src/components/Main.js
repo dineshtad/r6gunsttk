@@ -209,7 +209,7 @@ function Main() {
 
 <div className="top-bar d-flex justify-content-between">
   <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
-    <span>Last Updated: Sept/19/25</span>
+    <span>Last Updated: Feb/14/26</span>
   </div>
   <Button
     variant="dark"
@@ -475,7 +475,7 @@ function Main() {
         <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
 
         <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank">https://github.com/dineshtad/r6gunsttk</a></p>
-        <p><strong>Spreadsheet:</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank">https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s</a></p>
+        <p><strong>Spreadsheet (outdated):</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank">https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s</a></p>
       </Modal.Body>
       <Modal.Footer className={darkMode ? 'bg-dark text-light' : ''}>
         <Button variant="secondary" onClick={() => setShowModal(false)}>
