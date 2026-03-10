@@ -4,11 +4,11 @@
 2,SR-25 ,DMR,"Striker, Blackbeard, Flores",Attacker,61,450
 3,L85A2 ,AR,"Sledge, Thatcher",Attacker,47,670
 4,AR33 ,AR,"Thatcher, Flores",Attacker,41,749
-5,PMR90A2,DMR,"Thatcher, Capitao, Hibana",Attacker,62,450
+5,PMR90A2,DMR,"Thatcher, Capitao, Hibana, Nokk, Solid Snake",Attacker,62,450
 6,R4-C ,AR,"Ash, Ram",Attacker,39,860
 7,G36C ,AR,"Ash, Iana",Attacker,38,780
 8,556XI ,AR,"Thermite, Osa",Attacker,47,690
-9,F2 ,AR,Twitch,Attacker,37,980
+9,F2 ,AR,"Twitch, Solid Snake",Attacker,37,980
 10,417,DMR,"Twitch, Lion, Sens, Rauora",Attacker,69,450
 11,OTs-03 ,Sniper/DMR,Glaz,Attacker,71,380
 12,6P41 ,LMG,"Fuze, Finka",Attacker,46,680
@@ -23,14 +23,14 @@
 21,TYPE-89 ,AR,Hibana,Attacker,40,850
 22,C7E ,AR,Jackal,Attacker,42,800
 23,PDW9 ,SMG,"Jackal, Osa",Attacker,34,800
-24,T-95 LSW ,LMG,Ying,Attacker,46,650
+24,T-95 LSW ,LMG,"Ying, Flores",Attacker,46,650
 25,LMG-E ,LMG,"Zofia, Ram",Attacker,41,720
 26,M762 ,AR,Zofia,Attacker,45,730
 27,BOSG.12.2,Slug Shotgun/Sniper,"Dokkaebi, Vigil","Attacker, Defender",125,600
 28,Mk 14 EBR ,DMR,"Dokkaebi, Aruni","Attacker, Defender",60,450
 29,V308 ,AR,Lion,Attacker,44,700
 30,SPEAR .308 ,AR,Finka,Attacker,42,700
-31,AR-15.AR-15.50 ,DMR,"Maverick, Tubarao","Attacker, Defender",67,450
+31,AR-15.50 ,DMR,"Maverick, Tubarao","Attacker, Defender",67,450
 32,AK-74M ,AR,"Nomad, Deimos",Attacker,44,650
 33,ARX200 ,AR,"Nomad, Iana",Attacker,47,700
 34,F90 ,AR,Gridlock,Attacker,38,780
@@ -82,14 +82,15 @@
 80,PRB92,Pistol,"Capitao, Nomad, Aruni","Attacker, Defender",42,500
 81,P229,Pistol,"Hibana, Grim, Echo, Goyo, Skopos","Attacker, Defender",51,500
 82,USP40,Pistol,"Jackal, Brava, Mira, Oryx","Attacker, Defender",48,500
-83,Q-929,Pistol,"Ying, Leison, Thunderbird","Attacker, Defender",60,500
+83,Q-929,Pistol,"Ying, Lesion, Thunderbird","Attacker, Defender",60,500
 84,RG15,Pistol (Scoped),"Zofia, Ela, Melusi","Attacker, Defender",38,500
 85,GSH-18,Pistol,"Fuze, Finka, Flores, Rauora, Kapkan, Tachanka","Attacker, Defender",44,500
 86,1911 TACOPS,Pistol,"Maverick, Thorn","Attacker, Defender",55,500
 87,.44 Mag Semi-Auto,Pistol (Magnified Scope),"Nomad, Kaid","Attacker, Defender",54,500
 88,SDP 9mm,Pistol,"Gridlock, Sens, Mozzie","Attacker, Defender",47,500
 89,.44 Vendetta,Revolver (Scoped),Deimos,Attacker,78,500
-90,LUISON,Pistol,Caveira,Defender,65,450
-91,KERATOS .357,Revolver,"Bandit, Maestro, Alibi, Wamai",Defender,78,500
-92,P-10C,Pistol (Scoped),"Jager, Clash, Warden",Defender,40,500
-93,Glaive-12,Slug Shotgun,Denari,Defender,67,500
+90,TACIT .45,Pistol (Scoped),Solid Snake,Attacker,52,500
+91,LUISON,Pistol,Caveira,Defender,65,450
+92,KERATOS .357,Revolver,"Bandit, Maestro, Alibi, Wamai",Defender,78,500
+93,P-10C,Pistol (Scoped),"Jager, Clash, Warden",Defender,40,500
+94,Glaive-12,Slug Shotgun,Denari,Defender,67,500
