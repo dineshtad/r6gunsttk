@@ -9,6 +9,7 @@ function Main() {
   const [gunData, setGunData] = useState([]); 
   const [originalGunData, setOriginalGunData] = useState([]); 
   const [applyExtendedBarrel, setApplyExtendedBarrel] = useState(false); 
+  const [addRookArmor, setAddRookArmor] = useState(false);
   const [includePistolsOrRevolvers, setIncludePistols] = useState(false); 
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'default' }); 
   const [gunSearch, setGunSearch] = useState(''); 
@@ -90,12 +91,12 @@ function Main() {
       });
   }, []);
 
-  // Effect to reapply sorting when the Extended Barrel checkbox is toggled
+  // Effect to reapply sorting when Extended Barrel or Rook armor is toggled
   useEffect(() => {
     if (sortConfig.key && sortConfig.direction !== 'default') {
       handleSort(sortConfig.key, sortConfig.direction); 
     }
-  }, [applyExtendedBarrel]);
+  }, [applyExtendedBarrel, addRookArmor]);
 
   // Automatically check "Include Pistols/Revolvers" checkbox if Pistol or Revolver is selected in the dropdown
   useEffect(() => {
@@ -175,10 +176,15 @@ function Main() {
 
   const calculateExtraColumns = (damage, fireRate) => {
     const adjustedDamage = applyExtendedBarrel ? Math.floor(damage * 1.12) : damage;
+
+    const oneArmorHealth = addRookArmor ? 125 : 100;
+    const twoArmorHealth = addRookArmor ? 135 : 110;
+    const threeArmorHealth = addRookArmor ? 150 : 125;
+
     const dps = (adjustedDamage * (fireRate / 60)).toFixed(4);
-    const bulletsToKillOne = Math.ceil(100 / adjustedDamage);
-    const bulletsToKillTwo = Math.ceil(110 / adjustedDamage);
-    const bulletsToKillThree = Math.ceil(125 / adjustedDamage);
+    const bulletsToKillOne = Math.ceil(oneArmorHealth / adjustedDamage);
+    const bulletsToKillTwo = Math.ceil(twoArmorHealth / adjustedDamage);
+    const bulletsToKillThree = Math.ceil(threeArmorHealth / adjustedDamage);
     const ttkOne = ((bulletsToKillOne - 1) / (fireRate / 60)).toFixed(4);
     const ttkTwo = ((bulletsToKillTwo - 1) / (fireRate / 60)).toFixed(4);
     const ttkThree = ((bulletsToKillThree - 1) / (fireRate / 60)).toFixed(4);
@@ -209,7 +215,7 @@ function Main() {
 
 <div className="top-bar d-flex justify-content-between">
   <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
-    <span>Last Updated: Mar/10/26</span>
+    <span>Last Updated: Mar/24/26</span>
   </div>
   <Button
     variant="dark"
@@ -292,7 +298,7 @@ function Main() {
 </div>
 
 
-  <div className="d-flex justify-content-center mb-4 filter options">
+  <div className="d-flex justify-content-center mb-4 filter-options">
     <div className="form-check" style={{ marginRight: '20px' }}>
       <input
         className="form-check-input"
@@ -305,6 +311,20 @@ function Main() {
         Apply Extended Barrel
       </label>
     </div>
+
+    <div className="form-check" style={{ marginRight: '20px' }}>
+      <input
+        className="form-check-input"
+        type="checkbox"
+        id="addRookArmor"
+        checked={addRookArmor}
+        onChange={(e) => setAddRookArmor(e.target.checked)}
+      />
+      <label className="form-check-label ml-2" htmlFor="addRookArmor">
+        Add Rook armor (+25 HP)
+      </label>
+    </div>
+
     <div className="form-check" style={{ marginRight: '20px' }}>
       <input
         className="form-check-input"
@@ -328,6 +348,7 @@ function Main() {
           setOperatorSearch('');
           setIncludePistols(false);
           setApplyExtendedBarrel(false);
+          setAddRookArmor(false);
         }}
       >
         Clear Filters
@@ -461,21 +482,27 @@ function Main() {
         <Modal.Title>How This Works</Modal.Title>
       </Modal.Header>
       <Modal.Body className={darkMode ? 'bg-dark text-light' : ''}>
-        <p>This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
-          the damage) AND that the bullet is shot within 25 meters (for most guns, damage dropoff happens at any farther distance).</p>
-        <p>Also note that not every gun has access to the extended barrel.</p>
+        <p>
+          This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower 
+          the damage) AND that the bullet is shot within 25 meters (for most guns, damage dropoff starts happening past 25 meters).
+        </p>
         <p>This is how values are calculated...</p>
-        <p><strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)</p>
-        <p><strong>DPS</strong>: Damage per second, calculated as (Damage * Fire Rate) / 60</p>
+        <p>
+          <strong>Extended Barrel effect</strong>: Damage * 1.12 (Rounded down)
+          <br />
+          <em>(Note that not every gun has access to the extended barrel)</em>
+        </p>
+        <p><strong>DPS</strong>: (Damage * Fire Rate) / 60</p>
         <p><strong>Bullets to Kill 1 Armor</strong>: 100 / Damage (Rounded up)</p>
         <p><strong>Bullets to Kill 2 Armor</strong>: 110 / Damage (Rounded up)</p>
         <p><strong>Bullets to Kill 3 Armor</strong>: 125 / Damage (Rounded up)</p>
+        <p><strong>Rook armor option</strong>: Adds +25 HP to each armor class</p>
         <p><strong>TTK 1 Armor</strong>: (<i>Bullets to Kill 1 Armor</i> - 1) / (Fire Rate / 60)</p>
         <p><strong>TTK 2 Armor</strong>: (<i>Bullets to Kill 2 Armor</i> - 1) / (Fire Rate / 60)</p>
         <p><strong>TTK 3 Armor</strong>: (<i>Bullets to Kill 3 Armor</i> - 1) / (Fire Rate / 60)</p>
 
-        <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank">https://github.com/dineshtad/r6gunsttk</a></p>
-        <p><strong>Spreadsheet (outdated):</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank">https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s</a></p>
+        <p><strong>Source code:</strong> <a href="https://github.com/dineshtad/r6gunsttk" target="_blank" rel="noreferrer">https://github.com/dineshtad/r6gunsttk</a></p>
+        <p><strong>Spreadsheet (outdated):</strong> <a href="https://docs.google.com/spreadsheets/d/1Akx-yrqD0e62pIBpDJ3FDrhM52LWpjPE7D_9vgTk_6s" target="_blank" rel="noreferrer">Link</a></p>
       </Modal.Body>
       <Modal.Footer className={darkMode ? 'bg-dark text-light' : ''}>
         <Button variant="secondary" onClick={() => setShowModal(false)}>
