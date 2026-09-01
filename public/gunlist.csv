@@ -27,17 +27,17 @@
 25,M762 ,AR,Zofia,Attacker,45,730
 26,LMG-E ,LMG,"Zofia, Ram",Attacker,41,720
 27,XK23,AR,"Dokkaebi, Sens, Rauora",Attacker,49,675
-28,Mk 14 EBR ,DMR,"Dokkaebi, Aruni","Attacker, Defender",60,450
+28,Mk 14 EBR ,DMR,"Dokkaebi, Aruni","Attacker, Defender",56,450
 29,BOSG.12.2,Slug Shotgun/Sniper,"Dokkaebi, Vigil","Attacker, Defender",125,600
 30,V308 ,AR,Lion,Attacker,44,700
 31,SPEAR .308 ,AR,Finka,Attacker,42,700
-32,AR-15.50 ,DMR,"Maverick, Tubarao","Attacker, Defender",67,450
+32,AR-15.50 ,DMR,"Maverick, Tubarao","Attacker, Defender",59,450
 33,AK-74M ,AR,"Nomad, Deimos",Attacker,44,650
 34,ARX200 ,AR,"Nomad, Iana",Attacker,47,700
 35,F90 ,AR,Gridlock,Attacker,38,780
 36,M249 SAW ,LMG,Gridlock,Attacker,48,650
 37,FMG-9 ,SMG,"Nokk, Smoke, Denari","Attacker, Defender",34,800
-38,CSRX 300 ,Sniper,Kali,Attacker,135,50
+38,CSRX 300 ,Sniper,Kali,Attacker,135,62
 39,SC3000K ,AR,Zero,Attacker,45,800
 40,MP7 ,SMG,"Zero, Bandit, Fenrir","Attacker, Defender",32,900
 41,POF-9 ,AR,Sens,Attacker,37,740
@@ -68,9 +68,9 @@
 65,Reaper MK2 ,Machine Pistol,"Sledge, Ying, Maverick, Rauora, Pulse, Rook, Oryx","Attacker, Defender",31,765
 67,BEARING 9 ,Machine Pistol,"Glaz, Hibana, Tachanka, Echo, Thunderbird","Attacker, Defender",33,1100
 68,SMG-11 ,Machine Pistol,"Amaru, Smoke, Mute, Solis","Attacker, Defender",32,1270
-69,SMG-12 ,Machine Pistol,"Dokkaebi, Vigil, Warden","Attacker, Defender",28,1270
+69,SMG-12 ,Machine Pistol,"Dokkaebi, Vigil, Warden","Attacker, Defender",16,1270
 70,C75 Auto ,Machine Pistol,"Dokkaebi, Kali, Sentry, Vigil, Thorn","Attacker, Defender",35,1000
-71,SPSMG9 ,Machine Pistol,"Kali, Clash","Attacker, Defender",33,980
+71,SPSMG9 ,Machine Pistol,"Kali, Clash","Attacker, Defender",35,980
 72,5.7 USG,Pistol,"Striker, Ash, Thermite, Nokk, Zero, Castle, Pulse, Fenrir","Attacker, Defender",42,500
 73,P226 MK 25,Pistol,"Sledge, Thatcher, Kali, Smoke, Mute, Tubarao, Denari","Attacker, Defender",50,500
 74,M45 MEUSOC,Pistol,"Ash, Thermite, Castle, Pulse","Attacker, Defender",58,500

@@ -24,3 +24,7 @@ The code for this website uses **React.js**.
 **Notes**: This assumes every bullet is shot to the enemy's chest (not arms or legs, as shooting here would lower the damage) AND that the bullet is shot within 25 meters (for most guns, damage dropoff happens at any farther distance).
 
 Also note that not every gun has access to the extended barrel.
+
+## Questions
+
+If you have any questions, you can reach out to me on Reddit. My username is DannyGlop37

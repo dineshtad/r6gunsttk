@@ -214,8 +214,16 @@ function Main() {
 <div className={`${darkMode ? 'dark-mode' : ''}`}> 
 
 <div className="top-bar d-flex justify-content-between">
-  <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem' }}>
-    <span>Last Updated: June 3, 2026</span>
+  <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem', textAlign: 'left' }}>
+    <span>Last Updated: September 1, 2026</span>
+    <br />
+    <a
+      href="https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/PONCuRt8LaCr3O31NkBQb/y11s3-designers-notes"
+      target="_blank"
+      rel="noreferrer"
+    >
+      See latest changes
+    </a>
   </div>
   <Button
     variant="dark"
