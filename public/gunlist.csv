@@ -41,7 +41,7 @@
 39,SC3000K ,AR,Zero,Attacker,45,800
 40,MP7 ,SMG,"Zero, Bandit, Fenrir","Attacker, Defender",32,900
 41,POF-9 ,AR,Sens,Attacker,37,740
-42,COMMANDO 9 ,AR,"Sentry, Mozzie",Defender,36,780
+42,COMMANDO 9 ,AR,"Sentry, Mozzie, Noor",Defender,36,780
 43,TCSG12 ,Slug Shotgun/DMR,"Sentry, Kaid, Goyo",Defender,75,500
 44,MP5K ,SMG,"Mute, Wamai",Defender,30,800
 45,UMP45 ,SMG,"Pulse, Castle",Defender,42,600
@@ -58,7 +58,7 @@
 56,T-5 SMG ,SMG,"Lesion, Oryx",Defender,28,900
 57,SCORPION EVO 3 A1 ,SMG,"Ela, Denari",Defender,23,1080
 58,K1A ,SMG,Vigil,Defender,36,720
-59,ALDA 5.56 ,LMG,Maestro,Defender,35,900
+59,ALDA 5.56 ,LMG,"Maestro, Noor",Defender,35,900
 60,ACS12 ,Slug Shotgun/DMR,"Maestro, Alibi, Azami",Defender,69,300
 61,Mx4 Storm ,SMG,Alibi,Defender,26,950
 62,AUG A3 ,SMG,Kaid,Defender,36,700
@@ -86,7 +86,7 @@
 84,Q-929,Pistol,"Ying, Lesion, Thunderbird","Attacker, Defender",60,500
 85,RG15,Pistol (Scoped),"Zofia, Ela, Melusi","Attacker, Defender",38,500
 86,GSH-18,Pistol,"Fuze, Finka, Flores, Rauora, Kapkan, Tachanka","Attacker, Defender",44,500
-87,1911 TACOPS,Pistol,"Maverick, Thorn","Attacker, Defender",55,500
+87,1911 TACOPS,Pistol,"Maverick, Thorn, Noor","Attacker, Defender",55,500
 88,.44 Mag Semi-Auto,Pistol (Magnified Scope),"Nomad, Kaid","Attacker, Defender",54,500
 89,SDP 9mm,Pistol,"Gridlock, Sens, Mozzie","Attacker, Defender",47,500
 90,.44 Vendetta,Revolver (Scoped),Deimos,Attacker,78,500
