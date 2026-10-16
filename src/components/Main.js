@@ -218,7 +218,7 @@ function Main() {
     <span>Last Updated: October 15, 2026</span>
     <br />
     <a
-      href="https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/PONCuRt8LaCr3O31NkBQb/y11s3-designers-notes"
+      href="https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/280F3jL91f371i6YbH3mew/designers-notes-y11s3-midseason-update"
       target="_blank"
       rel="noreferrer"
     >
