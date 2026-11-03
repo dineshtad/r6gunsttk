@@ -215,10 +215,10 @@ function Main() {
 
 <div className="top-bar d-flex justify-content-between">
   <div style={{ marginLeft: '20px', marginTop: '0px', fontSize: '0.85rem', textAlign: 'left' }}>
-    <span>Last Updated: October 15, 2026</span>
+    <span>Last Updated: November 3, 2026</span>
     <br />
     <a
-      href="https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/280F3jL91f371i6YbH3mew/designers-notes-y11s3-midseason-update"
+      href="https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/4siIATxV2PVpuSsBbTPB1t/y11s33-patch-notes"
       target="_blank"
       rel="noreferrer"
     >
